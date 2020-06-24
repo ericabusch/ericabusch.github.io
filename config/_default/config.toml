@@ -9,17 +9,9 @@
 title = "Erica L. Busch"
 
 # The URL of your site.
-<<<<<<< HEAD
 #End your URL with a `/` trailing slash, e.g. `https://example.com/`.
-#baseurl = "https://ericabusch.github.io/"
-=======
-# End your URL with a `/` trailing slash, e.g. `https://example.com/`.
-<<<<<<< HEAD
-baseurl = "ericabusch.github.io/"
-=======
 baseurl = "https://ericabusch.github.io/"
->>>>>>> bdd0e46029b125019e454298a2c8d48e58fed2c4
->>>>>>> d145c35778acca4343b4bf00d163ec22c7f4bb18
+
 
 # Enter a copyright notice to display in the site footer.
 # To display a copyright symbol, type `&copy;`. For current year, type `{year}`.
