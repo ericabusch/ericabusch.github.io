@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>__project__s | Erica L. Busch</title>
+    <link>https://ericabusch.github.io/__project__/</link>
+      <atom:link href="https://ericabusch.github.io/__project__/index.xml" rel="self" type="application/rss+xml" />
+    <description>__project__s</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>©2020</copyright>
+    <image>
+      <url>https://ericabusch.github.io/img/ststic/img/IMG_9722.JPG</url>
+      <title>__project__s</title>
+      <link>https://ericabusch.github.io/__project__/</link>
+    </image>
+    
+    <item>
+      <title>Projects</title>
+      <link>https://ericabusch.github.io/__project__/_index_none/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ericabusch.github.io/__project__/_index_none/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
