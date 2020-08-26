@@ -36,8 +36,10 @@ date_format = "Jan 2006"
   date_start = "2016-09-01"
   date_end = "2020-03-01"
   description = """
-  High Honors in Cognitive Science     
-  GPA: 3.81
+  High Honors in Cognitive Science  
+  Presidential Scholar       
+  Honors List 2016-2020  
+  Cum Laude  
   """
 [[experience]]
   title = "Advanced Language Study Abroad"
@@ -46,7 +48,8 @@ date_format = "Jan 2006"
   location = "Lima & Cuzco, Peru"
   date_start = "2016-09-01"
   date_end = "2016-12-01"
-  description = """
+  description = """  
+  Studied and lived for three months in Lima and Cuzco, Peru. Took courses through Centro Tinku to learn more about Spanish Literature, Peruvian Literature, and Andean culture.  
   """
 
 

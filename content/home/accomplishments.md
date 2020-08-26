@@ -58,7 +58,27 @@ date_format = "Jan 2006"
 
 
 
+
 +++
+<!-- [[item]]
+  organization = "Dartmouth Undergraduate Research and Advising"
+  organization_url = ""
+  title = "David C. Hodgson Endowment for Undergraduate Research Award"
+  url = ""
+  certificate_url = ""
+  date_start = "2019-01-01"
+  date_end = "2019-03-15"
+  description = ""
+
+[[item]]
+  organization = "National Science Foundation"
+  organization_url = ""
+  title = "Research Experience for Undergraduates Fellow"
+  url = "/project/octos/"
+  certificate_url = ""
+  date_start = "2019-06-01"
+  date_end = "2019-08-30"
+  description = "" -->
 <!-- [[item]]
   organization = "National Science Foundation"
   organization_url = ""
