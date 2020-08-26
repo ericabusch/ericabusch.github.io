@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>VR Gaze | Erica L. Busch</title>
+    <link>https://ericabusch.github.io/tag/vr-gaze/</link>
+      <atom:link href="https://ericabusch.github.io/tag/vr-gaze/index.xml" rel="self" type="application/rss+xml" />
+    <description>VR Gaze</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>©2020</copyright><lastBuildDate>Wed, 27 May 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://ericabusch.github.io/img/ststic/img/IMG_9722.JPG</url>
+      <title>VR Gaze</title>
+      <link>https://ericabusch.github.io/tag/vr-gaze/</link>
+    </image>
+    
+    <item>
+      <title>A Deep Learning Approach to Understanding Real-World Scene Perception in Autism</title>
+      <link>https://ericabusch.github.io/post/neukom/</link>
+      <pubDate>Wed, 27 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://ericabusch.github.io/post/neukom/</guid>
+      <description>&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;
+&lt;p&gt;Around 90% of individuals with autism experience sensory sensitivities, but our understanding of these symptoms is limited by past studies&amp;rsquo; unrealistic experimental designs and unreproducible results. We use a novel combination of virtual reality, eyetracking, and convolutional neural networks to model the staged of visual processing that predict differences in visual attention between individuals with and without autism. We find that even the earliest stages of the model can predict differences in gaze behavior between autists and controls. This suggests that visual processing differences in autism are not principally driven by the semantically-meaningful features within a scene but emerge from differences in early visual processing.&lt;/p&gt;
+&lt;p&gt;This project was advised by 
+&lt;a href=&#34;https://www.robertsonlab.com/caroline&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Caroline Robertson&lt;/a&gt; (Dartmouth College PBS) and 
+&lt;a href=&#34;https://cogsci.jhu.edu/directory/leyla-isik/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Leyla Isik&lt;/a&gt; (Johns Hopkins University Cognitive Science).&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://ericabusch.github.io/static/files/Busch_Neukom_Undergrad_Submission.pdf&#34;&gt;Full text here.&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>MAD Research Video</title>
+      <link>https://ericabusch.github.io/post/mad/</link>
+      <pubDate>Wed, 27 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://ericabusch.github.io/post/mad/</guid>
+      <description>&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/mOtlF0ywH_s&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
