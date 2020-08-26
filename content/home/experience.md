@@ -27,14 +27,14 @@ date_format = "Jan 2006"
   weight = 10
 
 [[experience]]
-  title = "[Predidential Scholar](/post/haxby/)"
+  title = "[Presidential Scholar](/post/haxby/)"
   company = "Haxby Lab"
   company_url = "http://haxbylab.dartmouth.edu/"
   location = "Hanover, NH"
   date_start = "2018-01-01"
   date_end = ""
   weight = 20
-  description = "various scholarships"
+  description = ""
 
 [[experience]]
   title = "[NSF REU Fellow](/post/gire/)"
