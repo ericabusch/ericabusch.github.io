@@ -27,7 +27,7 @@ date_format = "Jan 2006"
   weight = 10
 
 [[experience]]
-  title = "[Research Intern](/post/haxby/)"
+  title = "[Predidential Scholar](/post/haxby/)"
   company = "Haxby Lab"
   company_url = "http://haxbylab.dartmouth.edu/"
   location = "Hanover, NH"
