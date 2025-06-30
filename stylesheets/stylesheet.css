@@ -59,7 +59,7 @@ a {
   background-color: #1C1599;
 /*  background-image: url("./me.jpeg");}
 */  
-  background-image: linear-gradient(120deg, #B993D6, #8CA6DB); }
+  background-image: linear-gradient(120deg, #B993D6, rgba(79, 229, 176, 0.728)); }
 
 @media screen and (min-width: 64em) {
   .page-header {
@@ -114,7 +114,7 @@ a {
   margin-top: 2rem;
   margin-bottom: 1rem;
   font-weight: normal;
-  color: #159957; }
+  color: #159799; }
 .main-content p {
   margin-bottom: 1em; }
 .main-content code {
@@ -207,7 +207,7 @@ a {
 
 @media screen and (min-width: 64em) {
   .main-content {
-    max-width: 64rem;
+    max-width: 100rem;
     padding: 2rem 6rem;
     margin: 0 auto;
     font-size: 1.1rem; } }
@@ -245,3 +245,55 @@ a {
 @media screen and (max-width: 42em) {
   .site-footer {
     font-size: 0.9rem; } }
+
+/* ...existing code... */
+.navigation-container {
+  max-width: 100rem;        /* Match .main-content max-width */
+  margin: 0 auto;           /* Center the container */
+  padding: 2rem 6rem;       /* Match .main-content padding for large screens */
+}
+
+@media screen and (min-width: 42em) and (max-width: 64em) {
+  .navigation-container {
+    padding: 2rem 4rem;
+  }
+}
+@media screen and (max-width: 42em) {
+  .navigation-container {
+    padding: 2rem 1rem;
+  }
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* Evenly space links to edges */
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  gap: 0;
+}
+
+.nav-menu li {
+  flex: 0 1 auto;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+/* ...existing code... */
+.nav-menu a {
+  font-size: 1.5em;         /* Larger text */
+  color: #159799;           /* Your requested color */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+.nav-menu a:hover {
+  color: #0d5d5e;           /* Optional: darker green on hover */
+  text-decoration: underline;
+}
+/* ...existing code... */
+/* ...existing code... */
