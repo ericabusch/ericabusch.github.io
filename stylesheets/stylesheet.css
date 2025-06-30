@@ -246,11 +246,12 @@ a {
   .site-footer {
     font-size: 0.9rem; } }
 
-/* ...existing code... */
 .navigation-container {
   max-width: 100rem;        /* Match .main-content max-width */
   margin: 0 auto;           /* Center the container */
   padding: 2rem 6rem;       /* Match .main-content padding for large screens */
+  width: 100%;
+  box-sizing: border-box;
 }
 
 @media screen and (min-width: 42em) and (max-width: 64em) {
@@ -267,22 +268,41 @@ a {
 .nav-menu {
   display: flex;
   flex-direction: row;
-  justify-content: space-between; /* Evenly space links to edges */
+  flex-wrap: wrap;              /* Allow items to wrap on small screens */
+  justify-content: space-between;
   align-items: center;
   list-style-type: none;
   margin: 0;
   padding: 0;
   width: 100%;
-  gap: 0;
+  gap: 0.5em;                   /* Small gap between items */
 }
 
 .nav-menu li {
-  flex: 0 1 auto;
+  flex: 1 1 auto;               /* Allow items to shrink and grow */
   text-align: center;
   margin: 0;
-  padding: 0;
+  padding: 0.5em 0;
+  min-width: 120px;             /* Prevent items from getting too small */
 }
-/* ...existing code... */
+
+/* Responsive adjustments for smaller screens */
+@media screen and (max-width: 600px) {
+  .navigation-container {
+    padding: 1rem 0.5rem;
+  }
+  .nav-menu {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+  .nav-menu li {
+    min-width: 0;
+    width: 100%;
+    padding: 0.5em 0;
+  }
+}
+
 .nav-menu a {
   font-size: 1.5em;         /* Larger text */
   color: #159799;           /* Your requested color */
@@ -295,5 +315,3 @@ a {
   color: #0d5d5e;           /* Optional: darker green on hover */
   text-decoration: underline;
 }
-/* ...existing code... */
-/* ...existing code... */
