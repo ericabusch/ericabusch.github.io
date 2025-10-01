@@ -8,23 +8,46 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="../stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="../stylesheets/github-light.css" media="screen">
-    <!-- GitHub Octicon CDN for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.5.0/build.css">
     <style>
       .repo-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5em;
         list-style: none;
         padding: 0;
+        margin: 2em 0;
       }
-      .repo-list li {
-        margin-bottom: 1em;
-        font-size: 1.2em;
+      .repo-card {
         display: flex;
         align-items: center;
+        background: #f6f8fa;
+        border: 1px solid #e1e4e8;
+        border-radius: 8px;
+        padding: 1em 1.5em;
+        min-width: 260px;
+        max-width: 350px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+        transition: box-shadow 0.2s;
       }
-      .repo-list .octicon {
-        margin-right: 0.5em;
-        color: #24292f;
-        font-size: 1.3em;
+      .repo-card:hover {
+        box-shadow: 0 4px 16px rgba(21,151,153,0.10);
+      }
+      .repo-card img {
+        width: 36px;
+        height: 36px;
+        margin-right: 1em;
+        border-radius: 6px;
+        background: #fff;
+        border: 1px solid #e1e4e8;
+      }
+      .repo-card a {
+        font-size: 1.1em;
+        font-weight: 600;
+        color: #159799;
+        text-decoration: none;
+      }
+      .repo-card a:hover {
+        text-decoration: underline;
       }
     </style>
   </head>
@@ -34,77 +57,36 @@
       <h2 class="project-tagline"></h2>
     </section>
     <section class="main-content">
-      
-      <h2>Software packages</h2>
+      <h2>GitHub Repositories</h2>
       <ul class="repo-list">
-        <li>
-          <span class="octicon octicon-mark-github"></span>
-          <a href="https://pypi.org/project/TPHATE/" target="_blank">T-PHATE on PIP</a>
+        <li class="repo-card">
+          <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub logo">
+          <a href="https://github.com/ericabusch/tphate_analysis_capsule" target="_blank">tphate_analysis_capsule</a>
         </li>
-        <li>
-          <span class="octicon octicon-mark-github"></span>
-          <a href="https://pypi.org/project/EPHATE/" target="_blank">E-PHATE on PIP</a>
+        <li class="repo-card">
+          <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub logo">
+          <a href="https://github.com/ericabusch/manifold_abcd_psychopathology_bpcnni" target="_blank">manifold_abcd_psychopathology_bpcnni</a>
         </li>
-        <!-- Add more repositories as needed -->
-     <h2>RepBiomrkr Tutorial</h2>
-      <ul class="repo-list">
-        <li>
-          <p> <a href="https://github.com/ericabusch/RepBiomrkr" target="_blank">Repository</a> containing tutorials for using hyperalignment and manifold learning to improve representations of brain phenotypes as biomarkers of mental health.
-          Tutorials can be run locally or on Google Colab.</p>
+        <li class="repo-card">
+          <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub logo">
+          <a href="https://github.com/ericabusch/ABCD_hyperalignment_JNeurosci" target="_blank">ABCD_hyperalignment_JNeurosci</a>
         </li>
-        <!-- Add more repositories as needed -->
-      </ul>
-      <h2>Analysis repositories</h2>
-      <ul class="repo-list">
-        
-        <li>
-          <span class="octicon octicon-mark-github"></span>
-          <a href="https://github.com/ericabusch/avatarRT_analysis" target="_blank">Neurofeedback paper</a>
-        </li>
-
-        <li>
-          <span class="octicon octicon-mark-github"></span>
-          <a href="https://github.com/ericabusch/manifold_abcd_psychopathology_bpcnni" target="_blank">E-PHATE paper</a>
-        </li>
-        <li>
-          <span class="octicon octicon-mark-github"></span>
-          <a href="https://github.com/ericabusch/ABCD_hyperalignment_JNeurosci" target="_blank">ABCD hyperalignment paper</a>
-        </li>
-        <li>
-          <span class="octicon octicon-mark-github"></span>
-          <a href="https://github.com/ericabusch/tphate_analysis_capsule" target="_blank">T-PHATE paper</a>
-        </li>
-        <li>
-          <span class="octicon octicon-mark-github"></span>
-          <a href="https://github.com/ericabusch/hybrid_hyperalignment_neuroimage" target="_blank">Hybrid hyperalignment paper</a>
-        </li>
-        <!-- Add more repositories as needed -->
-      </ul>
-      <h2>Task code</h2>
-      <ul class="repo-list">
-        
-        <li>
-          <span class="octicon octicon-mark-github"></span>
-          <a href="https://github.com/ericabusch/avatarRT_task" target="_blank">avatar neurofeedback task</a>
-        </li>
-
-        <li>
-          <span class="octicon octicon-mark-github"></span>
-          <a href="https://github.com/ericabusch/rt-cloud" target="_blank">rt-cloud implementation</a>
+        <li class="repo-card">
+          <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub logo">
+          <a href="https://github.com/ericabusch/hybrid_hyperalignment_neuroimage" target="_blank">hybrid_hyperalignment_neuroimage</a>
         </li>
         <!-- Add more repositories as needed -->
       </ul>
     </section>
     <section class="navigation-container">
-    <ul class="nav-menu">
+      <ul class="nav-menu">
         <li><a href="../index.html">Home</a></li>
         <li><a href="publications.html">Publications</a></li>
-        <!-- <li><a href="research.html">Research Topics</a></li> -->
+        <li><a href="research.html">Research Topics</a></li>
         <li><a href="software.html">Software</a></li>
-        <li><a href="contact.html">Contact</a></li>
         <li><a href="../files/cv.pdf">CV</a></li>
-        <!-- <li><a href="misc.html">Miscellaneous</a></li> -->
-    </ul>
+        <li><a href="misc.html">Miscellaneous</a></li>
+      </ul>
     </section>
     <footer class="site-footer">
       <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a>.</span>
