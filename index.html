@@ -19,12 +19,162 @@
     </script>
     
   </head>
+  body, .project-name, .project-tagline, .repo-title, .repo-desc, .top-nav-menu a, .pip-link {
+        font-family: Tahoma, Geneva, Verdana, sans-serif !important;
+      }
+      .repo-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2em;
+        list-style: none;
+        padding: 0;
+        margin: 2em 0;
+        justify-items: center;
+      }
+      @media (max-width: 800px) {
+        .repo-list {
+          grid-template-columns: 1fr;
+        }
+      }
+      .repo-card {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background: #fff;
+        border: 1px solid #e1e4e8;
+        border-radius: 10px;
+        padding: 1.5em 1.5em 1.5em 1.5em;
+        min-width: 320px;
+        max-width: 600px;
+        box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+        transition: box-shadow 0.2s, border-color 0.2s;
+        color: #111;
+      }
+      .repo-card:hover {
+        box-shadow: 0 6px 24px rgba(21,151,153,0.13);
+        border-color: #159799;
+      }
+      .repo-card img {
+        width: 110px;
+        height: 110px;
+        margin-right: 1.5em;
+        border-radius: 12px;
+        background: #fff;
+        border: 1px solid #e1e4e8;
+        object-fit: cover;
+        display: block;
+        flex-shrink: 0;
+      }
+      .repo-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex: 1;
+      }
+      .repo-title {
+        font-size: 1.08em;
+        font-weight: 700;
+        margin-bottom: 0.4em;
+        color: #111;
+        text-decoration: none;
+        text-align: left;
+      }
+      .repo-title:hover {
+        text-decoration: underline;
+        color: #159799;
+      }
+      .repo-desc {
+        font-size: 0.92em;
+        color: #111;
+        margin-bottom: 0.2em;
+        margin-top: 0;
+        text-align: justify;
+        line-height: 1.5;
+      }
+      .pip-row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+        margin: 2.5em 0 1em 0;
+        flex-wrap: wrap;
+      }
+      .pip-link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+        color: #111;
+        font-size: 1em;
+      }
+      .pip-link:hover {
+        color: #159799;
+      }
+      .pip-badge {
+        margin-top: 0.5em;
+        margin-bottom: 0.2em;
+        height: 32px;
+      }
+      /* Navigation bar styles for top banner */
+      .top-nav-container {
+        background: inherit;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        margin: 0;
+        /* Lower the menu further on the banner */
+        padding: 2.2em 0 1.2em 0;
+        min-height: 4.5em;
+      }
+      .top-nav-menu {
+        display: flex;
+        flex-direction: row;
+        gap: 2em;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      .top-nav-menu li {
+        margin: 0;
+        padding: 0;
+      }
+      .top-nav-menu a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 1.22em;
+        letter-spacing: 0.02em;
+        transition: color 0.2s;
+        padding-bottom: 0.1em;
+        font-family: Tahoma, Geneva, Verdana, sans-serif !important;
+      }
+      .top-nav-menu a:hover,
+      .top-nav-menu a:focus {
+        color: #e0e0e0;
+        text-decoration: underline;
+      }
+      @media (max-width: 700px) {
+        .top-nav-menu {
+          gap: 1em;
+          font-size: 1em;
+        }
+      }
+    </style>
+  </head>
   <body>
     <section class="page-header">
       <h1 class="project-name">Erica L. Busch</h1>
       <h2 class="project-tagline"></h2>
+      <nav class="top-nav-container">
+        <ul class="top-nav-menu">
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="software.html">Software</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="../files/cv.pdf">CV</a></li>
+        </ul>
+      </nav>
     </section>
-    <!-- ...existing code... -->
 <section class="main-content">
   <a id="hello-about-me" class="anchor" href="#hello-about-me" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link" align='right'></span></a>
   <section class="main-content">
@@ -42,20 +192,6 @@
       <img src="files/me.jpeg" alt="hi" class="inline" width="240" height="296" style="margin-right: 0; border-radius: 4px; align-self: center;"/>
     </div>
   </section>
-
-<section class="navigation-container">
-  <ul class="nav-menu">
-    <li><a href="pages/publications.html">Publications</a></li>
-    <!-- <li><a href="pages/research.html">Research Topics</a></li> -->
-    <li><a href="pages/software.html">Software</a></li>
-    <li><a href="pages/contact.html">Contact</a></li>
-
-    <li><a href="files/cv.pdf">CV</a></li>
-    <!-- <li><a href="pages/misc.html">Miscellaneous</a></li> -->
-  </ul>
-</section>
-
-
 
       <footer class="site-footer">
       
