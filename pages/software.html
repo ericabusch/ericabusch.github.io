@@ -10,44 +10,73 @@
     <link rel="stylesheet" type="text/css" href="../stylesheets/github-light.css" media="screen">
     <style>
       .repo-list {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1.5em;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2em;
         list-style: none;
         padding: 0;
         margin: 2em 0;
+        justify-items: center;
+      }
+      @media (max-width: 800px) {
+        .repo-list {
+          grid-template-columns: 1fr;
+        }
       }
       .repo-card {
         display: flex;
-        align-items: center;
-        background: #f6f8fa;
-        border: 1px solid #e1e4e8;
-        border-radius: 8px;
-        padding: 1em 1.5em;
-        min-width: 260px;
-        max-width: 350px;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.03);
-        transition: box-shadow 0.2s;
-      }
-      .repo-card:hover {
-        box-shadow: 0 4px 16px rgba(21,151,153,0.10);
-      }
-      .repo-card img {
-        width: 36px;
-        height: 36px;
-        margin-right: 1em;
-        border-radius: 6px;
+        flex-direction: row;
+        align-items: flex-start;
         background: #fff;
         border: 1px solid #e1e4e8;
+        border-radius: 10px;
+        padding: 1.5em 1.5em 1.5em 1.5em;
+        min-width: 320px;
+        max-width: 600px;
+        box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+        transition: box-shadow 0.2s, border-color 0.2s;
+        color: #111;
       }
-      .repo-card a {
-        font-size: 1.1em;
-        font-weight: 600;
-        color: #159799;
+      .repo-card:hover {
+        box-shadow: 0 6px 24px rgba(21,151,153,0.13);
+        border-color: #159799;
+      }
+      .repo-card img {
+        width: 110px;
+        height: 110px;
+        margin-right: 1.5em;
+        border-radius: 12px;
+        background: #fff;
+        border: 1px solid #e1e4e8;
+        object-fit: cover;
+        display: block;
+        flex-shrink: 0;
+      }
+      .repo-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        flex: 1;
+      }
+      .repo-title {
+        font-size: 1.08em;
+        font-weight: 700;
+        margin-bottom: 0.4em;
+        color: #111;
         text-decoration: none;
+        text-align: left;
       }
-      .repo-card a:hover {
+      .repo-title:hover {
         text-decoration: underline;
+        color: #159799;
+      }
+      .repo-desc {
+        font-size: 0.92em;
+        color: #111;
+        margin-bottom: 0.2em;
+        margin-top: 0;
+        text-align: justify;
+        line-height: 1.5;
       }
     </style>
   </head>
@@ -60,22 +89,54 @@
       <h2>GitHub Repositories</h2>
       <ul class="repo-list">
         <li class="repo-card">
-          <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub logo">
-          <a href="https://github.com/ericabusch/tphate_analysis_capsule" target="_blank">tphate_analysis_capsule</a>
+          <img src="../files/tph_img.png" alt="Temporal-PHATE analyses logo">
+          <div class="repo-info">
+            <a class="repo-title" href="https://github.com/ericabusch/tphate_analysis_capsule" target="_blank">Temporal-PHATE analyses</a>
+            <p class="repo-desc">Analysis code and tools for the T-PHATE manifold learning method for fMRI timeseries, as described in "Multi-view manifold learning of human brain-state trajectories" (Nature Computational Science, 2023).</p>
+          </div>
         </li>
         <li class="repo-card">
-          <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub logo">
-          <a href="https://github.com/ericabusch/manifold_abcd_psychopathology_bpcnni" target="_blank">manifold_abcd_psychopathology_bpcnni</a>
+          <img src="../files/eph.png" alt="Exogenous-PHATE analyses logo">
+          <div class="repo-info">
+            <a class="repo-title" href="https://github.com/ericabusch/manifold_abcd_psychopathology_bpcnni" target="_blank">Exogenous-PHATE analyses</a>
+            <p class="repo-desc">Code for manifold learning analyses of adolescent brain and environment interactions predicting emotional and behavioral problems, as published in Biological Psychiatry: Cognitive Neuroscience and Neuroimaging (2024).</p>
+          </div>
         </li>
         <li class="repo-card">
-          <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub logo">
-          <a href="https://github.com/ericabusch/ABCD_hyperalignment_JNeurosci" target="_blank">ABCD_hyperalignment_JNeurosci</a>
+          <img src="../files/abcdha.png" alt="ABCD - Hyperalignment logo">
+          <div class="repo-info">
+            <a class="repo-title" href="https://github.com/ericabusch/ABCD_hyperalignment_JNeurosci" target="_blank">ABCD - Hyperalignment</a>
+            <p class="repo-desc">Analysis scripts for dissociation of reliability, predictability, and heritability in functional connectomes during development, as published in Journal of Neuroscience (2024).</p>
+          </div>
         </li>
         <li class="repo-card">
-          <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub logo">
-          <a href="https://github.com/ericabusch/hybrid_hyperalignment_neuroimage" target="_blank">hybrid_hyperalignment_neuroimage</a>
+          <img src="../files/h2a.png" alt="Hybrid Hyperalignment (H2A) logo">
+          <div class="repo-info">
+            <a class="repo-title" href="https://github.com/ericabusch/hybrid_hyperalignment_neuroimage" target="_blank">Hybrid Hyperalignment (H2A)</a>
+            <p class="repo-desc">Code for hybrid hyperalignment: a high-dimensional model of shared information in cortical patterns of response and functional connectivity, as published in NeuroImage (2021).</p>
+          </div>
         </li>
-        <!-- Add more repositories as needed -->
+        <li class="repo-card">
+          <img src="../files/game.png" alt="avatarRT Unity Task logo">
+          <div class="repo-info">
+            <a class="repo-title" href="https://github.com/ericabusch/avatarRT_task" target="_blank">avatarRT Unity Task</a>
+            <p class="repo-desc">Unity-based real-time neurofeedback game for fMRI, designed for the AvatarRT project. Provides a customizable environment for closed-loop brain-computer interface experiments.</p>
+          </div>
+        </li>
+        <li class="repo-card">
+          <img src="../files/nfb.png" alt="Neurofeedback avatarRT Analyses logo">
+          <div class="repo-info">
+            <a class="repo-title" href="https://github.com/ericabusch/avatarRT_analysis" target="_blank">Neurofeedback avatarRT Analyses</a>
+            <p class="repo-desc">Analysis pipeline for AvatarRT real-time fMRI neurofeedback experiments, including preprocessing, statistical analysis, and visualization tools.</p>
+          </div>
+        </li>
+        <li class="repo-card">
+          <img src="../files/rep.png" alt="Representations for Biomarkers logo">
+          <div class="repo-info">
+            <a class="repo-title" href="https://github.com/ericabusch/RepBiomrkr" target="_blank">Representations for Biomarkers</a>
+            <p class="repo-desc">Repository for reproducible biomarker discovery in neuroimaging, with scripts and workflows for robust feature selection and validation.</p>
+          </div>
+        </li>
       </ul>
     </section>
     <section class="navigation-container">
