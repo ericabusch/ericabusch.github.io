@@ -11,58 +11,112 @@
     <!-- GitHub Octicon CDN for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.5.0/build.css">
     <style>
-      .repo-list {
-        list-style: none;
-        padding: 0;
-      }
-      .repo-list li {
-        margin-bottom: 1em;
-        font-size: 1.2em;
-        display: flex;
-        align-items: center;
-      }
-      .repo-list .octicon {
-        margin-right: 0.5em;
-        color: #24292f;
-        font-size: 1.3em;
-      }
+      .top-nav-container {
+  background: inherit;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 0;
+  padding: 2.2em 0 1.2em 0;
+  min-height: 4.5em;
+}
+.top-nav-menu {
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.top-nav-menu li {
+  margin: 0;
+  padding: 0;
+}
+.top-nav-menu a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.22em;
+  letter-spacing: 0.02em;
+  transition: color 0.2s;
+  padding-bottom: 0.1em;
+  font-family: Tahoma, Geneva, Verdana, sans-serif !important;
+}
+.top-nav-menu a:hover,
+.top-nav-menu a:focus {
+  color: #e0e0e0;
+  text-decoration: underline;
+}
+@media (max-width: 700px) {
+  .top-nav-menu {
+    gap: 1em;
+    font-size: 1em;
+  }
+}
     </style>
   </head>
   <body>
   <section class="page-header">
-      <h1 class="project-name">Contact</h1>
-      <h2 class="project-tagline"></h2>
-    </section>
-  <section class="main-content">
-
-  <h2>Find me....</h2>
-      <ul class="repo-list">
-        <li>
-          <p> <a href="https://github.com/ericabusch" target="_blank">on Github</a></p>
-        </li>
-        <li>
-          <p> <a href="https://www.linkedin.com/in/erica-busch" target="_blank">on LinkedIn</a></p>
-        </li>
-        <li>
-          <p> <a href="https://bsky.app/profile/elbusch.bsky.social" target="_blank">@elbusch.bsky.social</a></p>
-        </li>
-        <li>
-          <p> email: erica[dot]busch[at]yale.edu
-        </li>
-        <!-- Add more repositories as needed -->
-      </ul>
-    </section>
-    <section class="navigation-container">
-    <ul class="nav-menu">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="publications.html">Publications</a></li>
-        <!-- <li><a href="research.html">Research Topics</a></li> -->
-        <li><a href="software.html">Software</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="../files/cv.pdf">CV</a></li>
-        <!-- <li><a href="misc.html">Miscellaneous</a></li> -->
+  <h1 class="project-name">Contact</h1>
+  <h2 class="project-tagline"></h2>
+  <nav class="top-nav-container">
+    <ul class="top-nav-menu">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="software.html">Software</a></li>
+      <li><a href="../files/cv.pdf">CV</a></li>
     </ul>
-    </section>
+  </nav>
+</section>
+<section class="main-content">
+  <h2>Find me....</h2>
+  <ul class="repo-list" style="list-style: none; padding-left: 0;">
+    <li style="margin-bottom: 1em;">
+      <a href="https://github.com/ericabusch" target="_blank" style="display: flex; align-items: center; color: #111; text-decoration: none;">
+        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" style="width: 28px; height: 28px; margin-right: 0.7em; border-radius: 6px;">
+        on Github
+      </a>
+    </li>
+    <li style="margin-bottom: 1em;">
+      <a href="https://www.linkedin.com/in/erica-busch" target="_blank" style="display: flex; align-items: center; color: #111; text-decoration: none;">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" style="width: 28px; height: 28px; margin-right: 0.7em; border-radius: 6px; background: #fff;">
+        on LinkedIn
+      </a>
+    </li>
+    <li style="margin-bottom: 1em;">
+      <a href="https://bsky.app/profile/elbusch.bsky.social" target="_blank" style="display: flex; align-items: center; color: #111; text-decoration: none;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Bluesky_Logo.svg" alt="Bluesky" style="width: 28px; height: 28px; margin-right: 0.7em; border-radius: 6px; background: #fff;">
+        @elbusch.bsky.social
+      </a>
+    </li>
+    <li style="margin-bottom: 1em;">
+      <span style="display: flex; align-items: center; color: #111;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Mail_%28iOS%29.svg" alt="Email" style="width: 28px; height: 28px; margin-right: 0.7em; border-radius: 6px; background: #fff;">
+        email: erica[dot]busch[at]yale.edu
+      </span>
+    </li>
+  </ul>
+
+  <h2>Talks and tidbits</h2>
+  <div style="display: flex; flex-wrap: wrap; gap: 2em 2em; justify-content: flex-start;">
+    <div style="flex: 1 1 320px; max-width: 400px;">
+      <iframe width="100%" height="225" src="https://www.youtube.com/embed/Y2EohxgMViQ?rel=0" title="YouTube video" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+    </div>
+    <div style="flex: 1 1 320px; max-width: 400px;">
+      <iframe width="100%" height="225" src="https://www.youtube.com/embed/A2dfjGo8Gdw?start=3064&rel=0" title="YouTube video" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+    </div>
+    <div style="flex: 1 1 320px; max-width: 400px;">
+      <iframe width="100%" height="225" src="https://www.youtube.com/embed/mOtlF0ywH_s?rel=0" title="YouTube video" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+    </div>
+    <div style="flex: 1 1 320px; max-width: 400px;">
+      <iframe width="100%" height="225" src="https://www.youtube.com/embed/ZLDntyau9ws?rel=0" title="YouTube video" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+    </div>
+    <div style="flex: 1 1 320px; max-width: 400px;">
+      <iframe width="100%" height="225" src="https://www.youtube.com/embed/9ZWg7DWkH-I?rel=0" title="YouTube video" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+    </div>
+  </div>
+</section>
     <footer class="site-footer">
       <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a>.</span>
     </footer>

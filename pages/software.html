@@ -5,10 +5,13 @@
     <title>Software</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="../stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <!-- Remove Google Fonts, use Tahoma -->
     <link rel="stylesheet" type="text/css" href="../stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="../stylesheets/github-light.css" media="screen">
     <style>
+      body, .project-name, .project-tagline, .repo-title, .repo-desc, .top-nav-menu a, .pip-link {
+        font-family: Tahoma, Geneva, Verdana, sans-serif !important;
+      }
       .repo-list {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -26,7 +29,7 @@
       .repo-card {
         display: flex;
         flex-direction: row;
-        align-items: flex-start;
+        align-items: center;
         background: #fff;
         border: 1px solid #e1e4e8;
         border-radius: 10px;
@@ -55,7 +58,7 @@
       .repo-info {
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content: center;
         flex: 1;
       }
       .repo-title {
@@ -78,17 +81,107 @@
         text-align: justify;
         line-height: 1.5;
       }
+      .pip-row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+        margin: 2.5em 0 1em 0;
+        flex-wrap: wrap;
+      }
+      .pip-link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+        color: #111;
+        font-size: 1em;
+      }
+      .pip-link:hover {
+        color: #159799;
+      }
+      .pip-badge {
+        margin-top: 0.5em;
+        margin-bottom: 0.2em;
+        height: 32px;
+      }
+      /* Navigation bar styles for top banner */
+      .top-nav-container {
+        background: inherit;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        margin: 0;
+        /* Lower the menu further on the banner */
+        padding: 2.2em 0 1.2em 0;
+        min-height: 4.5em;
+      }
+      .top-nav-menu {
+        display: flex;
+        flex-direction: row;
+        gap: 2em;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      .top-nav-menu li {
+        margin: 0;
+        padding: 0;
+      }
+      .top-nav-menu a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 1.22em;
+        letter-spacing: 0.02em;
+        transition: color 0.2s;
+        padding-bottom: 0.1em;
+        font-family: Tahoma, Geneva, Verdana, sans-serif !important;
+      }
+      .top-nav-menu a:hover,
+      .top-nav-menu a:focus {
+        color: #e0e0e0;
+        text-decoration: underline;
+      }
+      @media (max-width: 700px) {
+        .top-nav-menu {
+          gap: 1em;
+          font-size: 1em;
+        }
+      }
     </style>
   </head>
   <body>
     <section class="page-header">
       <h1 class="project-name">Software</h1>
       <h2 class="project-tagline"></h2>
+      <nav class="top-nav-container">
+        <ul class="top-nav-menu">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="../files/cv.pdf">CV</a></li>
+        </ul>
+      </nav>
     </section>
     <section class="main-content">
-      <h2>GitHub Repositories</h2>
       <ul class="repo-list">
         <li class="repo-card">
+          <img src="../files/rep.png" alt="Representations for Biomarkers logo">
+          <div class="repo-info">
+            <a class="repo-title" href="https://github.com/ericabusch/RepBiomrkr" target="_blank">Representations for Biomarkers</a>
+            <p class="repo-desc">Repository for reproducible biomarker discovery in neuroimaging, with scripts, workflows, and tutorials for functional alignment and manifold learning approaches. Includes Google Colab notebook tutorials for working with provided simulated and sample fMRI data. Accompanies Busch et al., 2025 (in revision).</p>
+          </div>
+        </li>
+        <li class="repo-card">
+          <img src="../files/eph.png" alt="Exogenous-PHATE analyses logo">
+          <div class="repo-info">
+            <a class="repo-title" href="https://github.com/ericabusch/manifold_abcd_psychopathology_bpcnni" target="_blank">Exogenous-PHATE analyses</a>
+            <p class="repo-desc">Analysis code and E-PHATE method; combining adolescent brain and environment features to predicting psychopathology development, as published in Biological Psychiatry: Cognitive Neuroscience and Neuroimaging (2024).</p>
+          </div>
+        </li>
+         <li class="repo-card">
           <img src="../files/tph_img.png" alt="Temporal-PHATE analyses logo">
           <div class="repo-info">
             <a class="repo-title" href="https://github.com/ericabusch/tphate_analysis_capsule" target="_blank">Temporal-PHATE analyses</a>
@@ -96,17 +189,24 @@
           </div>
         </li>
         <li class="repo-card">
-          <img src="../files/eph.png" alt="Exogenous-PHATE analyses logo">
+          <img src="../files/game.png" alt="avatarRT Unity Task logo">
           <div class="repo-info">
-            <a class="repo-title" href="https://github.com/ericabusch/manifold_abcd_psychopathology_bpcnni" target="_blank">Exogenous-PHATE analyses</a>
-            <p class="repo-desc">Code for manifold learning analyses of adolescent brain and environment interactions predicting emotional and behavioral problems, as published in Biological Psychiatry: Cognitive Neuroscience and Neuroimaging (2024).</p>
+            <a class="repo-title" href="https://github.com/ericabusch/avatarRT_task" target="_blank">avatarRT Unity Task</a>
+            <p class="repo-desc">Unity-based navigation game for fMRI, designed for the avatarRT project. Provides a customizable environment and video game for use with closed-loop experiments, designed in Unity3D (C#).</p>
+          </div>
+        </li>
+        <li class="repo-card">
+          <img src="../files/nfb.png" alt="Neurofeedback avatarRT Analyses logo">
+          <div class="repo-info">
+            <a class="repo-title" href="https://github.com/ericabusch/avatarRT_analysis" target="_blank">Neurofeedback avatarRT Analyses</a>
+            <p class="repo-desc">Analysis pipeline for AvatarRT real-time fMRI neurofeedback experiment, including rt-cloud interface, data preprocessing, neural and behavioral analyses, statistis, and visualization tools, to go with Busch et al., 2025 (biorxiv)</p>
           </div>
         </li>
         <li class="repo-card">
           <img src="../files/abcdha.png" alt="ABCD - Hyperalignment logo">
           <div class="repo-info">
             <a class="repo-title" href="https://github.com/ericabusch/ABCD_hyperalignment_JNeurosci" target="_blank">ABCD - Hyperalignment</a>
-            <p class="repo-desc">Analysis scripts for dissociation of reliability, predictability, and heritability in functional connectomes during development, as published in Journal of Neuroscience (2024).</p>
+            <p class="repo-desc">Analysis scripts and CHA implementation for measuring reliability, heritability, and predictivity of developing functional connectomes, as published in Journal of Neuroscience (2024).</p>
           </div>
         </li>
         <li class="repo-card">
@@ -116,38 +216,17 @@
             <p class="repo-desc">Code for hybrid hyperalignment: a high-dimensional model of shared information in cortical patterns of response and functional connectivity, as published in NeuroImage (2021).</p>
           </div>
         </li>
-        <li class="repo-card">
-          <img src="../files/game.png" alt="avatarRT Unity Task logo">
-          <div class="repo-info">
-            <a class="repo-title" href="https://github.com/ericabusch/avatarRT_task" target="_blank">avatarRT Unity Task</a>
-            <p class="repo-desc">Unity-based real-time neurofeedback game for fMRI, designed for the AvatarRT project. Provides a customizable environment for closed-loop brain-computer interface experiments.</p>
-          </div>
-        </li>
-        <li class="repo-card">
-          <img src="../files/nfb.png" alt="Neurofeedback avatarRT Analyses logo">
-          <div class="repo-info">
-            <a class="repo-title" href="https://github.com/ericabusch/avatarRT_analysis" target="_blank">Neurofeedback avatarRT Analyses</a>
-            <p class="repo-desc">Analysis pipeline for AvatarRT real-time fMRI neurofeedback experiments, including preprocessing, statistical analysis, and visualization tools.</p>
-          </div>
-        </li>
-        <li class="repo-card">
-          <img src="../files/rep.png" alt="Representations for Biomarkers logo">
-          <div class="repo-info">
-            <a class="repo-title" href="https://github.com/ericabusch/RepBiomrkr" target="_blank">Representations for Biomarkers</a>
-            <p class="repo-desc">Repository for reproducible biomarker discovery in neuroimaging, with scripts and workflows for robust feature selection and validation.</p>
-          </div>
-        </li>
       </ul>
-    </section>
-    <section class="navigation-container">
-      <ul class="nav-menu">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="publications.html">Publications</a></li>
-        <li><a href="research.html">Research Topics</a></li>
-        <li><a href="software.html">Software</a></li>
-        <li><a href="../files/cv.pdf">CV</a></li>
-        <li><a href="misc.html">Miscellaneous</a></li>
-      </ul>
+      <div class="pip-row">
+        <a class="pip-link" href="https://pypi.org/project/TPHATE/" target="_blank">
+          TPHATE on PyPI
+          <img class="pip-badge" src="https://img.shields.io/pypi/v/TPHATE.svg?color=159799&label=pip%20install%20TPHATE&logo=pypi&logoColor=white" alt="TPHATE PyPI badge">
+        </a>
+        <a class="pip-link" href="https://pypi.org/project/EPHATE/" target="_blank">
+          EPHATE on PyPI
+          <img class="pip-badge" src="https://img.shields.io/pypi/v/EPHATE.svg?color=159799&label=pip%20install%20EPHATE&logo=pypi&logoColor=white" alt="EPHATE PyPI badge">
+        </a>
+      </div>
     </section>
     <footer class="site-footer">
       <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a>.</span>
