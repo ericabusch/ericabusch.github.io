@@ -1,0 +1,74 @@
+<!--
+  PRIVATE / UNLISTED PAGE TEMPLATE
+  ================================
+  This file lives in templates/ which is excluded from the Jekyll build
+  (see _config.yml), so it is never itself published as a live page.
+
+  HOW TO USE:
+  1. Copy this file into the updates/ folder.
+  2. Rename it to "update-{slug}.html" where {slug} is a long random
+     hex string, e.g.:
+       updates/update-q7z2k9x4.html
+     Generate a slug with:
+       python3 -c "import secrets; print(secrets.token_hex(4))"
+     (Do NOT use guessable names like "private.html" or "family.html" —
+     the filename itself is the only thing keeping this page obscure.)
+  3. Edit the title and content below.
+  4. Do NOT link to it from index.html, pages/*.html, or any nav menu.
+     Share the direct URL only with the people you want to see it, e.g.:
+       https://ericabusch.github.io/updates/update-q7z2k9x4.html
+  5. Commit and push as usual.
+
+  IMPORTANT CAVEATS (read before relying on this):
+  - This is obscurity, not real access control. There is no password.
+    Anyone who has the link (or guesses it, or finds it in git history,
+    or browses the public GitHub repo file tree) can view it.
+  - Because this repo is public, every file — including this one and
+    every private update page — is visible in the repo's commit history
+    on GitHub forever, even if you later delete or rename the page.
+    Never put anything here you wouldn't want permanently public if the
+    link leaked.
+  - The noindex meta tag + robots.txt entry below stop well-behaved
+    search engines from crawling/indexing these pages, but they do not
+    stop a person with the link from viewing or resharing it.
+  - If you need real privacy (password protection, real access control),
+    GitHub Pages alone can't do it — you'd need a different host
+    (e.g. Netlify/Cloudflare Pages with access rules) or a private repo
+    on a paid GitHub plan.
+-->
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Update</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow, noarchive">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Life Update</h1>
+      <h2 class="project-tagline">just for the people who have this link</h2>
+    </section>
+    <section class="main-content">
+
+      <h2>August 2026</h2>
+      <p>
+        Write your update here. Add a new "h2" dated section like this
+        each time you post, newest at the top.
+      </p>
+
+      <!--
+      <h2>Month Year</h2>
+      <p>Next update goes here.</p>
+      -->
+
+    </section>
+    <footer class="site-footer">
+      <span class="site-footer-credits">Unlisted page — please don't share this link further.</span>
+    </footer>
+  </body>
+</html>
