@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Photo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/github-light.css" media="screen">
+    <style>
+      .photo-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1em;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      .photo-grid img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 4px;
+      }
+      @media (max-width: 500px) {
+        .photo-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="main-content">
+      <div class="photo-grid">
+        <img src="../files/IMG_1435.jpg" alt="">
+        <img src="../files/IMG_0900.jpg" alt="">
+        <img src="../files/IMG_2624.jpg" alt="">
+        <img src="../files/IMG_5189.jpg" alt="">
+      </div>
+    </section>
+  </body>
+</html>
