@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
@@ -21,11 +23,15 @@
         flex: 1 1 280px;
         max-width: 360px;
       }
-      .photo-grid img {
+      .photo-grid img,
+      .photo-grid video {
         width: 100%;
         height: auto;
         border-radius: 8px;
         display: block;
+      }
+      .photo-grid video {
+        background: #000;
       }
       .photo-grid figcaption {
         font-size: 0.9em;
@@ -41,122 +47,16 @@
     </section>
     <section class="main-content">
 
-      <h2>14-24 August 2026</h2>
-      <p>
-        Our mission over the last 10 days was getting moved into our new, permanent apartment, fixing a million plumbing issues, and obtaining furniture. Junie attempted to be helpful by splashing in all the loose water she could and by blending into the scenery. She's kept herself busy befriending all the old ladies and small children in the neighborhood and being a Very Good Ambassador on behalf of All Large Dogs.
-      </p>
+      <!--
+        Each month lives in its own file in _sections/, named YYYY-MM.html. Jekyll stitches them into
+        this page at build time, newest first. To add a month: create the
+        file, then add an include_relative line at the TOP of this list.
+        To preview locally without Jekyll:  python3 updates/preview.py
+      -->
 
-      <div class="photo-grid">
-        <figure>
-          <img src="photos/18_skku.jpg" alt="">
-          <figcaption>Gotta make herself known at our new university!</figcaption>
-        </figure>
-        <figure>
-          <img src="photos/11_apartment.jpg" alt="">
-          <figcaption>We're careful not to let her blend right into the beige aesthetic of this new apartment.</figcaption>
-        </figure>
-        <figure>
-          <img src="photos/12_apartment.jpg" alt="">
-          <figcaption>Tum's up, always.</figcaption>
-        </figure>
-        <figure>
-          <img src="photos/14_silly.jpg" alt="">
-          <figcaption>Tum's still up.</figcaption>
-        </figure>
-        <figure>
-          <img src="photos/15_walk.jpg" alt="">
-          <figcaption>Late night adventure down the path by the overflowing Seohocheon stream.</figcaption>
-        </figure>
-        <figure>
-          <img src="photos/19_river.jpg" alt="">
-          <figcaption>Is it a monster?! Nope, just a Junie!</figcaption>
-        </figure>
-        <figure>
-          <img src="photos/16_hwaseong.jpg" alt="">
-          <figcaption>Not Junie, but a pretty cool place for a morning run (Hwaseong Fortress).</figcaption>
-        </figure>
-        <figure>
-          <img src="photos/17_chair.jpg" alt="">
-          <figcaption>Minor couch debacle when only one piece arrives.</figcaption>
-        </figure>
-        <figure>
-          <img src="photos/20_skku2.jpg" alt="">
-          <figcaption>After a few hours and a headache, the rest of the couch has arrived and Junie's thrilled to sprawl out (and me).</figcaption>
-        </figure>
-      </div>
-
-      <h2>7-13 August 2026</h2>
-      <p>It's been crazy hot and humid in Suwon, so we've been getting creative in figuring out how to keep Junie (and us) cool and active.</p>
-      <div class="photo-grid">
-      <figure>
-          <img src="photos/06_mall.jpg" alt="">
-          <figcaption>Starfield mall has a dog park for small and "big" (aka: over 8 kg) dogs on its rooftop! Junie played with some Malteses and was a little confused, but had fun anyway.</figcaption>
-        </figure>
-        <figure>
-          <img src="photos/07_mall.jpg" alt="">
-          <figcaption>The mall is almost entirely dog friendly, aside from a few stores -- and Junie was grateful for the long AC'd walk.</figcaption>
-        </figure>
-        <figure>
-          <img src="photos/08_thief.jpg" alt="">
-          <figcaption>Junie's been hanging out a lot with Qi, an old friend from New Haven -- including running off with her stuffed toys.</figcaption>
-        </figure>
-        
-        <p>We decided to get out of the city for the weekend and find somewhere near the coast. The only hotel we could find which was "large dog friendly" was Little Mykonos -- a confusingly Mediterranean themed resort with a specific building for dogs, including a dog pool which we thought would be perfect for Junie. This was on Seonjaedo island, which has some crazy huge mud flats.</p>
-        <figure>
-          <img src="photos/09_pool.jpg" alt="">
-          <figcaption>Turns out the pool was meant for Pomeranians. Junie was shocked to dive in and learn it was too shallow for her to swim.</figcaption>
-        </figure>
-        <figure>
-          <img src="photos/10_pool.jpg" alt="">
-          <figcaption>Instead, she wound up sprinting back and forth around the pool, barrelling through the water -- which was confusing but clearly fun?</figcaption>
-        </figure>
-        <figure>
-          <img src="photos/doghouse.jpeg" alt="">
-          <figcaption>She was too big for the dog house in the hotel room.</figcaption>
-        </figure>
-        <figure>
-          <img src="photos/sunset.jpg" alt="">
-          <figcaption>Sunset from the top of Little Mykonos with mud flats in the distance.</figcaption>
-        </figure>
-        <figure>
-          <img src="photos/mud.jpeg" alt="">
-          <figcaption>Exploring the mud flats at night along some crazy illuminated walkways.</figcaption>
-        </figure>
-        
-        <figure>
-          <img src="photos/myk.jpeg" alt="">
-          <figcaption>Verdict: Littly Mykonos was a confusing but not negative experience for us all.</figcaption>
-        </figure>
-        
-      </div>
-
-      <h2>1-6 August 2026</h2>
-      <p>
-        Junie was a true champ on the long flights from NYC -> Seattle and Seattle -> Incheon/Seoul. She brought a favorite toy and her beloved blanket for some comfort on the flight. She had lots of passengers petting her as she flew and even got some treats and compliments from the flight attendants and pilot.
-      </p>
-
-      <div class="photo-grid">
-        <figure>
-          <img src="photos/01_lounge.jpg" alt="">
-          <figcaption>Loves the Delta Sky Lounge</figcaption>
-        </figure>
-        <figure>
-          <img src="photos/02_boarding.jpg" alt="">
-          <figcaption>Following Tommy aboard the plane</figcaption>
-        </figure>
-        <figure>
-          <img src="photos/03_selfie.jpg" alt="">
-          <figcaption>All three of us ready for takeoff</figcaption>
-        </figure>
-        <figure>
-          <img src="photos/04_arrival.jpeg" alt="">
-          <figcaption>So tired after arriving in ICN - 12 hours on the plane is a long time for a pup (and humans)</figcaption>
-        </figure>
-        <figure>
-          <img src="photos/05_explore.jpg" alt="">
-          <figcaption>Strolling around town, getting to know the new neighborhood</figcaption>
-        </figure>
-      </div>
+      {% include_relative _sections/2026-10.html %}
+      {% include_relative _sections/2026-09.html %}
+      {% include_relative _sections/2026-08.html %}
 
     </section>
     <footer class="site-footer">
